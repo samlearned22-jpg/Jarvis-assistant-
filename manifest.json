@@ -1,0 +1,18 @@
+{
+  "name": "J.A.R.V.I.S. \u2014 Samuel & Luca",
+  "short_name": "J.A.R.V.I.S.",
+  "description": "Mobile command assistant for Samuel and Luca",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#020911",
+  "theme_color": "#03101a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
