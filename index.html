@@ -1,91 +1,94 @@
-**J.A.R.V.I.S.**
-
-**JUST A RATHER VERY INTELLIGENT SYSTEM**
-
-**SAMUEL & LUCA · MOBILE COMMAND INTERFACE**
-
-**● SYSTEM ONLINE**
-
-**READY**
-
-**Good day, Samuel and Luca.**
-
-**Type a command or use your voice. No API key is needed for built-in tools.**
-
-**HELP**
-
-**TIME**
-
-**YOUTUBE**
-
-**GOOGLE**
-
-**NOTES**
-
-**MUSIC**
-
-**AI CONVERSATION / COMMAND LINE**
-
-**J.A.R.V.I.S. online. I can run built-in commands, save notes and memory, open websites, and help organize homework. For advanced AI reasoning or automatic image understanding, connect an AI service; this version does not pretend to have cloud AI without one.**
-
-**SEND**
-
-**🎙 SPEAK**
-
-**🔊 VOICE: ON**
-
-**MEMORY & NOTES**
-
-**SAVE**
-
-**SHOW NOTES**
-
-**SHOW MEMORY**
-
-**Saved on this device in Safari. Export regularly to back up or share with Luca.**
-
-**IMPORT / EXPORT**
-
-**EXPORT DATA**
-
-**IMPORT JSON**
-
-**Export creates a backup of your notes and memory. Import merges them into this device.**
-
-**HOMEWORK PHOTO HELPER**
-
-**HELP ME SOLVE IT**
-
-**This no-key version can preview a photo and guide you from text you provide. It cannot reliably read/solve an image by itself; image understanding needs a vision-capable AI service.**
-
-**MUSIC & PLAYLISTS**
-
-**Choose audio files stored on your iPhone. Browsers generally cannot browse your entire music library automatically.**
-
-**WEB COMMAND REFERENCE**
-
-**open youtube**
-
-**Open YouTube**
-
-**RUN**
-
-**search google for …**
-
-**Search the web**
-
-**RUN**
-
-**open duolingo / maps / wikipedia / spotify**
-
-**RUN**
-
-**remember … / note … / show notes**
-
-**HELP**
-
-**export my data / import file**
-
-**RUN**
-
-**J.A.R.V.I.S. · BUILT FOR SAMUEL & LUCA · YOUR DATA STAYS IN THIS BROWSER**
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#03101a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="description" content="J.A.R.V.I.S. mobile assistant for Samuel and Luca">
+<link rel="manifest" href="manifest.json">
+<title>J.A.R.V.I.S. | Samuel & Luca</title>
+<style>
+:root{--cyan:#00eaff;--blue:#008cff;--green:#55ffad;--bg:#020911;--panel:#061522;--line:#087f9b;--muted:#8bbac8}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0,#06243a 0,#020911 58%);color:#dffaff;font:15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh;padding:env(safe-area-inset-top) 12px env(safe-area-inset-bottom)}
+header{max-width:760px;margin:auto;padding:20px 4px 12px;text-align:center;border-bottom:1px solid #07546c}h1{font-size:clamp(27px,8vw,43px);letter-spacing:.15em;color:var(--cyan);text-shadow:0 0 18px #00cfff;margin:4px 0}header p{font-size:11px;letter-spacing:.2em;color:#80cfe0;margin:8px 0}
+main{max-width:760px;margin:12px auto;display:grid;gap:12px}.panel{background:linear-gradient(145deg,#071a29ed,#030c15f5);border:1px solid #08627a;border-radius:15px;padding:14px;box-shadow:0 0 20px #00b7ff0b,inset 0 0 18px #00b7ff07}
+.status{display:flex;align-items:center;justify-content:space-between;color:var(--green);font-size:11px;letter-spacing:.12em}.reactor{width:118px;height:118px;margin:15px auto;border:3px solid var(--cyan);border-radius:50%;display:grid;place-items:center;box-shadow:0 0 12px #00dfff, inset 0 0 18px #008cff;position:relative}.reactor:before,.reactor:after{content:"";position:absolute;border:1px solid #008cff;border-radius:50%;inset:9px}.reactor:after{inset:20px;border:3px dashed var(--cyan);animation:spin 18s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.core{width:45px;height:45px;border-radius:50%;background:radial-gradient(circle,#fff 0,#00eaff 30%,#0073bd 70%);box-shadow:0 0 20px var(--cyan)}
+h2{font-size:13px;color:var(--cyan);letter-spacing:.12em;margin:0 0 10px;text-transform:uppercase}.muted{color:var(--muted);font-size:12px}.chatlog{height:230px;overflow:auto;display:flex;flex-direction:column;gap:9px;padding:4px}.bubble{max-width:92%;padding:10px 12px;border:1px solid #09617a;border-radius:12px;background:#071f30;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.45}.bubble.user{align-self:flex-end;border-color:#008cff;background:#062442}.bubble.jarvis{align-self:flex-start}.compose{display:flex;gap:7px;margin-top:10px}input,textarea,select{min-width:0;width:100%;background:#020b13;color:#e8fcff;border:1px solid #12627a;border-radius:10px;padding:12px;font:inherit}button,.filebutton{background:#06273a;color:var(--cyan);border:1px solid #00a9d0;border-radius:10px;padding:11px 12px;font-weight:650;font-size:12px;cursor:pointer}button:active{background:#08425a}button.primary{background:#063c52}.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tools button{min-height:45px}.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}.items{display:grid;gap:7px}.item{border:1px solid #10485c;border-radius:9px;padding:10px;background:#04111d;display:flex;gap:8px;align-items:center;justify-content:space-between}.item span{overflow-wrap:anywhere}.item button{padding:7px}.small{font-size:11px;color:var(--muted)}audio{width:100%;margin-top:10px;accent-color:var(--cyan)}footer{text-align:center;color:#4b8799;font-size:10px;padding:10px 0 20px;letter-spacing:.12em}.hidden{display:none!important}
+@media(min-width:650px){main{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}.chatlog{height:260px}}
+</style>
+</head>
+<body>
+<header><h1>J.A.R.V.I.S.</h1><p>JUST A RATHER VERY INTELLIGENT SYSTEM</p><div class="muted">SAMUEL & LUCA · MOBILE COMMAND INTERFACE</div></header>
+<main>
+<section class="panel">
+<div class="status"><span>● SYSTEM ONLINE</span><span id="clock">READY</span></div><div class="reactor"><div class="core"></div></div>
+<div style="text-align:center;font-size:14px;color:var(--cyan)">Good day, Samuel and Luca.</div><p class="muted" style="text-align:center">Type a command or use your voice. No API key is needed for built-in tools.</p>
+<div class="tools"><button data-cmd="help">HELP</button><button data-cmd="time">TIME</button><button data-cmd="open youtube">YOUTUBE</button><button data-cmd="open google">GOOGLE</button><button data-cmd="show notes">NOTES</button><button data-cmd="play music">MUSIC</button></div>
+</section>
+<section class="panel">
+<h2>AI Conversation / Command Line</h2><div id="chatlog" class="chatlog" aria-live="polite"><div class="bubble jarvis">J.A.R.V.I.S. online. I can run built-in commands, save notes and memory, open websites, and help organize homework. For advanced AI reasoning or automatic image understanding, connect an AI service; this version does not pretend to have cloud AI without one.</div></div>
+<div class="compose"><input id="command" placeholder="Say or type a command…" autocomplete="off"><button class="primary" id="send">SEND</button></div>
+<div class="compose"><button id="voice" style="flex:1">🎙 SPEAK</button><button id="speakToggle" style="flex:1">🔊 VOICE: ON</button></div><div id="voiceStatus" class="small"></div>
+</section>
+<section class="panel">
+<h2>Memory & Notes</h2><div class="compose"><input id="noteInput" placeholder="Add a note or remember something…"><button id="saveNote">SAVE</button></div>
+<div class="two" style="margin:9px 0"><button id="showNotes">SHOW NOTES</button><button id="showMemory">SHOW MEMORY</button></div><div id="notesList" class="items"></div><div class="small">Saved on this device in Safari. Export regularly to back up or share with Luca.</div>
+</section>
+<section class="panel">
+<h2>Import / Export</h2><div class="two"><button id="export">EXPORT DATA</button><label class="filebutton" style="text-align:center">IMPORT JSON<input id="importFile" type="file" accept=".json,application/json" class="hidden"></label></div><p class="small">Export creates a backup of your notes and memory. Import merges them into this device.</p>
+</section>
+<section class="panel">
+<h2>Homework Photo Helper</h2><input id="homeworkPhoto" type="file" accept="image/*" capture="environment"><div id="photoPreview"></div><textarea id="homeworkQuestion" rows="2" placeholder="Type the question or describe what is shown…"></textarea><div class="compose"><button id="homeworkHelp" class="primary" style="flex:1">HELP ME SOLVE IT</button></div><p class="small">This no-key version can preview a photo and guide you from text you provide. It cannot reliably read/solve an image by itself; image understanding needs a vision-capable AI service.</p>
+</section>
+<section class="panel">
+<h2>Music & Playlists</h2><input id="musicFiles" type="file" accept="audio/*" multiple><div id="musicList" class="items" style="margin-top:9px"></div><audio id="player" controls></audio><div class="small">Choose audio files stored on your iPhone. Browsers generally cannot browse your entire music library automatically.</div>
+</section>
+<section class="panel wide">
+<h2>Web Command Reference</h2><div class="items">
+<div class="item"><span><b>open youtube</b><br><span class="small">Open YouTube</span></span><button data-cmd="open youtube">RUN</button></div>
+<div class="item"><span><b>search google for …</b><br><span class="small">Search the web</span></span><button data-cmd="search google for photography colleges near me">RUN</button></div>
+<div class="item"><span><b>open duolingo / maps / wikipedia / spotify</b></span><button data-cmd="open duolingo">RUN</button></div>
+<div class="item"><span><b>remember … / note … / show notes</b></span><button data-cmd="help">HELP</button></div>
+<div class="item"><span><b>export my data / import file</b></span><button data-cmd="export my data">RUN</button></div>
+</div></section>
+</main><footer>J.A.R.V.I.S. · BUILT FOR SAMUEL & LUCA · YOUR DATA STAYS IN THIS BROWSER</footer>
+<script>
+const $=id=>document.getElementById(id);
+const store={notes:JSON.parse(localStorage.getItem('jv_notes')||'[]'),memory:JSON.parse(localStorage.getItem('jv_memory')||'[]'),history:[]};
+let voiceOn=true, musicUrls=[];
+function persist(){localStorage.setItem('jv_notes',JSON.stringify(store.notes));localStorage.setItem('jv_memory',JSON.stringify(store.memory))}
+function say(text){if(voiceOn&&'speechSynthesis'in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(text);u.rate=.95;u.pitch=.85;speechSynthesis.speak(u)}}
+function addBubble(text,who='jarvis'){let d=document.createElement('div');d.className='bubble '+who;d.textContent=text;$('chatlog').appendChild(d);$('chatlog').scrollTop=$('chatlog').scrollHeight}
+function reply(t){addBubble(t);say(t)}
+function renderList(target,arr,type){let root=$(target);root.innerHTML='';if(!arr.length){root.innerHTML='<div class="small">Nothing saved yet.</div>';return}arr.slice().reverse().forEach((x,ri)=>{let idx=arr.length-1-ri,d=document.createElement('div');d.className='item';let s=document.createElement('span');s.textContent=x.text;let b=document.createElement('button');b.textContent='DELETE';b.onclick=()=>{arr.splice(idx,1);persist();renderList(target,arr,type)};d.append(s,b);root.append(d)})}
+function openSite(url){window.open(url,'_blank','noopener,noreferrer')}
+function handle(raw){let q=raw.trim();if(!q)return;addBubble(q,'user');$('command').value='';store.history.push({q,at:new Date().toISOString()});let s=q.toLowerCase();
+if(/^help$|what can you do|list commands/.test(s)){reply('Available commands: time, date, open youtube/google/duolingo/maps/wikipedia/spotify, search google for [topic], note [text], remember [text], show notes, show memory, clear chat, export my data, play music, and explain homework. I can run local tools without an API key; advanced open-ended AI answers need an AI service.');return}
+if(s==='time'||s.includes('what time')){reply('The time is '+new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'}));return}
+if(s==='date'||s.includes('what date')||s.includes("today's date")){reply('Today is '+new Date().toLocaleDateString(undefined,{weekday:'long',year:'numeric',month:'long',day:'numeric'}));return}
+let sites={youtube:'https://www.youtube.com/',google:'https://www.google.com/',duolingo:'https://www.duolingo.com/',maps:'https://maps.google.com/',wikipedia:'https://www.wikipedia.org/',spotify:'https://open.spotify.com/',gmail:'https://mail.google.com/',classroom:'https://classroom.google.com/'};
+let m=s.match(/^(?:please )?(?:open|launch|go to)\s+([a-z]+)/);if(m&&sites[m[1]]){openSite(sites[m[1]]);reply('Opening '+m[1]+'.');return}
+m=s.match(/^(?:search google for|google|search for)\s+(.+)/);if(m){openSite('https://www.google.com/search?q='+encodeURIComponent(m[1]));reply('Searching Google for '+m[1]+'.');return}
+m=s.match(/^(?:note|add note|save note)\s*[:,-]?\s*(.+)/i);if(m){store.notes.push({text:m[1],at:Date.now()});persist();renderList('notesList',store.notes,'note');reply('Note saved.');return}
+m=s.match(/^(?:remember|remember that|save to memory)\s*[:,-]?\s*(.+)/i);if(m){store.memory.push({text:m[1],at:Date.now()});persist();reply('Saved to memory on this device.');return}
+if(/show notes|list notes/.test(s)){renderList('notesList',store.notes,'note');reply(store.notes.length?'Here are your saved notes below.':'You have no saved notes yet.');return}
+if(/show memory|what do you remember/.test(s)){reply(store.memory.length?'Saved memory: '+store.memory.map(x=>x.text).join('; '):'No saved memory yet. Use “remember …” to add something.');return}
+if(/export my data|export data/.test(s)){$('export').click();reply('Preparing your data backup.');return}
+if(/play music|open music/.test(s)){ $('musicFiles').click();reply('Choose audio files from your iPhone to build your local playlist.');return}
+if(/clear chat/.test(s)){$('chatlog').innerHTML='';reply('Conversation cleared. Saved notes and memory are unchanged.');return}
+if(/explain homework|help me solve|solve this/.test(s)){let question=$('homeworkQuestion').value.trim();reply(question?'Let’s work through it. First, identify what the question asks. Then list the known information, choose the rule or formula, solve one step at a time, and check the result. Your typed question is: '+question+' — for a specific solution, send the exact text or connect a vision-capable AI service for the photo.':'Type the homework question in the Homework Photo Helper area, then tap Help Me Solve It.');return}
+reply('I can handle built-in commands, but I do not have a connected general-purpose AI model in this no-key build. Try “help”, “search Google for…”, “note…”, or “remember…”. For conversational AI answers and automatic photo understanding, an AI service is needed; you can add one later without exposing a secret key in the app.');
+}
+$('send').onclick=()=>handle($('command').value);$('command').addEventListener('keydown',e=>{if(e.key==='Enter')handle($('command').value)});document.querySelectorAll('[data-cmd]').forEach(b=>b.onclick=()=>handle(b.dataset.cmd));
+$('saveNote').onclick=()=>{let v=$('noteInput').value.trim();if(!v)return;store.notes.push({text:v,at:Date.now()});persist();$('noteInput').value='';renderList('notesList',store.notes,'note');reply('Saved.');};
+$('showNotes').onclick=()=>renderList('notesList',store.notes,'note');$('showMemory').onclick=()=>reply(store.memory.length?store.memory.map(x=>x.text).join('\\n'):'No saved memory yet.');
+$('export').onclick=()=>{let blob=new Blob([JSON.stringify({app:'JARVIS',version:1,exportedAt:new Date().toISOString(),notes:store.notes,memory:store.memory},null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='jarvis-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
+$('importFile').onchange=async e=>{try{let data=JSON.parse(await e.target.files[0].text());if(!Array.isArray(data.notes)||!Array.isArray(data.memory))throw Error('This is not a JARVIS backup.');store.notes.push(...data.notes);store.memory.push(...data.memory);persist();renderList('notesList',store.notes,'note');reply('Import complete. Notes and memory were merged.')}catch(err){reply('Import failed: choose a valid JARVIS JSON backup.')}e.target.value=''};
+$('voice').onclick=()=>{let SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){$('voiceStatus').textContent='Speech recognition is not supported in this browser. Try Safari dictation from the keyboard.';return}let r=new SR();r.lang='en-US';r.interimResults=false;r.onstart=()=>$('voiceStatus').textContent='Listening…';r.onerror=e=>$('voiceStatus').textContent='Voice error: '+e.error+'. You can still type or use keyboard dictation.';r.onresult=e=>{let t=e.results[0][0].transcript;$('command').value=t;$('voiceStatus').textContent='Heard: '+t;handle(t)};r.onend=()=>{};r.start()};
+$('speakToggle').onclick=()=>{voiceOn=!voiceOn;$('speakToggle').textContent='🔊 VOICE: '+(voiceOn?'ON':'OFF');if(!voiceOn&&'speechSynthesis'in window)speechSynthesis.cancel()};
+$('homeworkPhoto').onchange=e=>{let f=e.target.files[0];if(!f)return;let url=URL.createObjectURL(f);$('photoPreview').innerHTML='';let im=document.createElement('img');im.src=url;im.alt='Homework preview';im.style='max-width:100%;max-height:260px;display:block;margin:10px auto;border:1px solid #087f9b;border-radius:10px';$('photoPreview').append(im)};
+$('homeworkHelp').onclick=()=>handle('explain homework');
+$('musicFiles').onchange=e=>{let list=$('musicList');list.innerHTML='';musicUrls.forEach(URL.revokeObjectURL);musicUrls=[];[...e.target.files].forEach((f,i)=>{let url=URL.createObjectURL(f);musicUrls.push(url);let row=document.createElement('div');row.className='item';let label=document.createElement('span');label.textContent=f.name;let b=document.createElement('button');b.textContent='PLAY';b.onclick=()=>{$('player').src=url;$('player').play()};row.append(label,b);list.append(row)});if(e.target.files.length)reply('Playlist ready with '+e.target.files.length+' file(s).')};
+setInterval(()=>$('clock').textContent=new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}),10000);
+renderList('notesList',store.notes,'note');
+if('serviceWorker'in navigator && location.protocol.startsWith('http'))window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+</script></body></html>
